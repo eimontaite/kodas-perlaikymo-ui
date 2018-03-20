@@ -39,7 +39,7 @@ class SupplierList extends Component {
             })
     }
 
-    composeBooks = (supplier, index) => {
+    composeSuppliers = (supplier, index) => {
         return (
             <SupplierListCardComponent
                 id={supplier.id}
