@@ -58,7 +58,7 @@ class UtilListContainer extends Component {
             <Link to={'/util/add/new'}><Button bsSize="lg" bsStyle="info">Nauja paslauga</Button></Link>
             <br />
             <br />
-            <UtilTableListComponent utils={this.state.util} /></div>)
+            <UtilTableListComponent utils={this.state.utils} /></div>)
     }
 }
 
