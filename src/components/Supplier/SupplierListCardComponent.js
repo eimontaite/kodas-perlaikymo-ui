@@ -8,7 +8,7 @@ const SupplierListCardComponent = (props) => {
             <td>{props.city}</td>
             <td>{props.companyCode}</td>
             <td>{props.rating}</td>
-            <td>{props.type}</td>
+            {/* <td>{props.type}</td> */}
             <button className="btn btn-danger" onClick={() => props.deleteHandler(props.id)} >Pašalinti</button>
             </tr>)
 }

@@ -48,7 +48,7 @@ class SupplierList extends Component {
                 companyCode={supplier.companyCode}
                 image={supplier.image}
                 rating={supplier.rating}
-                type={supplier.type}
+                // type={supplier.type}
                 deleteHandler={this.deleteHandler}
             />
         )
@@ -60,7 +60,7 @@ class SupplierList extends Component {
             <Link to={'/suppliers/create'}><Button bsSize="lg" bsStyle="info">Naujas teikėjas</Button></Link>
             <br />
             <br />
-            <SupplierTableListComponent deleteHandler={this.deleteHandler} books={this.state.suppliers} /></div>)
+            <SupplierTableListComponent deleteHandler={this.deleteHandler} suppliers={this.state.suppliers} /></div>)
     }
 }
 

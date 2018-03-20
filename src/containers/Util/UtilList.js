@@ -9,7 +9,7 @@ import '../Containers.css';
 
 class UtilListContainer extends Component {
     state = {
-        util: ''
+        utils: ''
     }
 
     componentWillMount = () => {
@@ -20,7 +20,7 @@ class UtilListContainer extends Component {
         axios.get('http://localhost:8080/api/util')
             .then((response) => {
                 this.setState({
-                    util: response.data.map(this.composeUtil)
+                    utils: response.data.map(this.composeUtil)
                 })
                 console.log(response.status)
             })
@@ -58,7 +58,7 @@ class UtilListContainer extends Component {
             <Link to={'/util/add/new'}><Button bsSize="lg" bsStyle="info">Nauja paslauga</Button></Link>
             <br />
             <br />
-            <UtilTableListComponent Util={this.state.util} /></div>)
+            <UtilTableListComponent utils={this.state.util} /></div>)
     }
 }
 
